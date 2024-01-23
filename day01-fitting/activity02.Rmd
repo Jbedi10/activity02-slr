@@ -62,6 +62,10 @@ In the R code chunk below titled `load-data`, you will type the code that reads 
 - Rather than downloading this file, uploading to RStudio, then reading it in, explore how to load this file directly from the provided URL with `readr::read_csv` (`{readr}` is part of `{tidyverse}`).
 - Assign this data set into a data frame named `hfi` (short for "Human Freedom Index").
 
+```{r load data}
+hfi<- read.csv('hfi.csv')
+```
+
 After doing this and viewing the loaded data, answer the following questions:
 
 1. What are the dimensions of the dataset?
