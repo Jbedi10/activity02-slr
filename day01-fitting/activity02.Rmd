@@ -122,8 +122,9 @@ hist_pf_expression_control <- hist(hfi_2016$pf_expression_control, main = "Distr
 
 4. Comment on each of these two distributions. 
   Be sure to describe their centers, spread, shape, and any potential outliers.
+Regarding distribution of personal freedom scores we can see that the distirbution fits a pretty typical shape. We would anticipate most values to be in the center of the graph, which is true. I dont see any outliers since the values of the score is on a standard scale of 1-10
 
-
+The distribution in the second set of data is a bit different. It doesnt fit the usual distribution shape we would anticipate. It seems there is no real distribution regarding political pressures and controls on media content.
 
 3. What type of plot would you use to display the relationship between the personal freedom score, `pf_score`, and the political pressures and controls on media content index,`pf_expression_control`?
 
@@ -132,6 +133,11 @@ hist_pf_expression_control <- hist(hfi_2016$pf_expression_control, main = "Distr
 - In the R code chunk below titled `relationship-plot`, plot this relationship using the variable `pf_expression_control` as the predictor/explanatory variable.
 
 ```{r relationship-plot}
+
+plot(hfi_2016$pf_expression_control, hfi_2016$pf_score, 
+     xlab = "Political Expression Control",
+     ylab = "Personal Freedom Score",
+     main = "Relationship between pf_expression_control and pf_score")
 
 ```
 
